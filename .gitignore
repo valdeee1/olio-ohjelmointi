@@ -1,6 +1,8 @@
-tehtava1/build/
-tehtava/*.user
-lisatehtava/build/
-lisatehtava/*.user
 viikkotehtava2/build/
+<<<<<<< HEAD
 viikkotehtava2/*.user
+tehtava1/build/
+tehtava1/*.user
+=======
+viikkotehtava2/*.user
+>>>>>>> 1a47ea572d6c801ec1c76acf3f3562761d975616
