@@ -1,8 +1,11 @@
 lisatehtava/build/
 lisatehtava/*.user
+
 tehtava1/build/
 tehtava1/*.user
+
 viikkotehtava2/build/
 viikkotehtava2/*.user
+
 viikkotehtava3/build/
-viikkotehtava/*.user
+viikkotehtava3/*.user
