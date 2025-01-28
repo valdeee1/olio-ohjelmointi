@@ -10,6 +10,6 @@ int main()
     kokki.makeSalad(12);
     kokki.makeSoup(9);
     ItalianChef Mario("Mario");
-    Mario.askSecret("pizza",12,12);
+    Mario.askSecret("pizza",17,15);
     return 0;
 }
