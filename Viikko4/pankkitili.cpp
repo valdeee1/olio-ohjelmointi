@@ -18,7 +18,7 @@ bool Pankkitili::deposit(double summa)
     }
     else{
         saldo += summa;
-        cout<<summa<<" talletettu"<<endl;
+        cout<<summa<<" talletettu henkilolle "<<omistaja<<endl;
         return true;
     }
 }

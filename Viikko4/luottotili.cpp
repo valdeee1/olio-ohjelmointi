@@ -20,6 +20,7 @@ bool Luottotili::deposit(double summa)
     else{
         saldo += summa;
         cout<<"Luottovelkaa kuitattu "<<summa<<endl;
+        cout<<"Jaljella oleva velka: "<<saldo<<endl;
         return true;
     }
 }

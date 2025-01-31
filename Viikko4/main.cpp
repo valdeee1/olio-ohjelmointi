@@ -12,5 +12,8 @@ int main()
     mari.talletus(400);
     teppo.showSaldo();
     mari.showSaldo();
+    teppo.tiliSiirto(2000,mari);
+    teppo.showSaldo();
+    mari.showSaldo();
     return 0;
 }

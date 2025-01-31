@@ -56,7 +56,16 @@ bool Asiakas::luotonNosto(double summa)
     }
 }
 
-bool Asiakas::tiliSiirto(double summa, Asiakas &)
+bool Asiakas::tiliSiirto(double summa, Asiakas &vastaanottaja)
 {
-
+    if(kayttotili.withdraw(summa))
+    {
+        vastaanottaja.talletus(summa);
+        cout<<nimi<<" siirtaa "<<summa<<" henkilolle "<<vastaanottaja.nimi<<endl;
+        return true;
+    }
+    else{
+        cout<<"Siirto epaonnistui!"<<endl;
+        return false;
+    }
 }
