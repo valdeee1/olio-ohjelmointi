@@ -40,7 +40,6 @@ void MainWindow::numberClickedHandler()
     if(state == 0){
         ui->num1->setText(ui->num1->text()+numberName.at(1));
         num1 +=numberName.at(1);
-        qDebug()<<num1;
     }
     else{
         ui->num2->setText(ui->num2->text()+numberName.at(1));
