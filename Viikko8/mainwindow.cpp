@@ -13,6 +13,8 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     connect(ui->fiveMinute,&QPushButton::clicked,this,&MainWindow::timeClickHandler);
     connect(ui->twoMinute,&QPushButton::clicked,this,&MainWindow::timeClickHandler);
     connect(pQTimer,&QTimer::timeout,this,&MainWindow::timeOut);
+    ui->progressBar1->setValue(player1Time);
+    ui->progressBar2->setValue(player2Time);
     setGameInfoText("Select time and press start!");
 
 }
@@ -59,6 +61,9 @@ void MainWindow::setGameInfoText(QString teksti)
 
 void MainWindow::timeClickHandler()
 {
+    if (started){
+        return;
+    }
     timeSelected = true;
     QPushButton * button = qobject_cast<QPushButton *>(sender());
     QString time = button->objectName();
@@ -77,9 +82,13 @@ void MainWindow::timeClickHandler()
 
 void MainWindow::startClickHandler()
 {
+    if(started){
+        return;
+    }
     if(!timeSelected){
         return;
     }
+    started = true;
     currentPlayer = 0;
     setGameInfoText("Game ongoing!");
     pQTimer->start();
@@ -87,6 +96,7 @@ void MainWindow::startClickHandler()
 
 void MainWindow::stopClickHandler()
 {
+    started = false;
     timeSelected = false;
     pQTimer->stop();
     player1Time = 100;

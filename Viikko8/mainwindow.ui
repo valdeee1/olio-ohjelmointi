@@ -110,7 +110,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Start</string>
+     <string>Start game</string>
     </property>
    </widget>
    <widget class="QPushButton" name="stopButton">
@@ -123,7 +123,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Stop</string>
+     <string>Stop game</string>
     </property>
    </widget>
   </widget>

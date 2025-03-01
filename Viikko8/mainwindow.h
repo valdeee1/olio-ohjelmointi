@@ -30,7 +30,8 @@ public slots:
 private:
     Ui::MainWindow *ui;
     short player1Time = 0, player2Time = 0, currentPlayer;
-    bool timeSelected = false;
+    bool timeSelected = false; //Että pelin voi lopettaa vain painamalla stop game
+    bool started = false;
     QTimer* pQTimer;
 };
 #endif // MAINWINDOW_H
