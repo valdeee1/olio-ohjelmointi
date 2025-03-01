@@ -1,6 +1,3 @@
-pankkitili_tehtava/build/
-pankkitili_tehtava/*.user
-
 Viikko1/build/
 Viikko1/*.user
 
@@ -21,3 +18,6 @@ Viikko6/*.user
 
 Viikko7/build/
 Viikko7/*.user
+
+Viikko8/build/
+Viikko8/*.user
